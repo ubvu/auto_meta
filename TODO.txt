@@ -1,0 +1,13 @@
+X Add pyproject.toml
+X Setup the pre-commit hooks
+X Format code
+X Add .sh file
+Generic metadata for software
+X Create hook to add minimum requirements
+Make sure requirements.txt covers all basics
+X Test in a VM
+Include autodocstring??
+Add check for hardcoded strings that might be passwords, keys, usernames, etc
+Include the ability to check for onboard graphics cards (IntelHD, etc)
+Test that pip is included and the python & pip versions work in all OS
+Include uv command to update the toml with each commit as pre-commit

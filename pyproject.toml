@@ -1,0 +1,27 @@
+[project]
+name = "python-template"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "gputil>=1.4.0",
+    "pre-commit>=4.2.0",
+    "psutil>=7.0.0",
+    "ruff>=0.11.8",
+]
+
+[tool.ruff]
+line-length = 79                 # Line length for formatting
+target-version = "py311"         # Target Python version
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+fixable = ["ALL"]           # Allow automatic fixes for all fixable issues
+ignore = []                 # Example of ignoring specific rules
+# Any lint rule can be ignored by adding a "# noqa" comment to the line in question
+
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = 79
