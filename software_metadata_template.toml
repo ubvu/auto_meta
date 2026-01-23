@@ -1,0 +1,57 @@
+# This is the template for software metadata used in the VU
+# There are two parts to it, required and optional
+# The required part will be automatically filled out or you
+## will be prompted for it when using the VU software templates
+# The optional part will be automatically filled where possible
+
+# ************** REQUIRED *****************
+[Basic]
+Type = "" # Pre filled based on which template is used
+Title = "" # Taken directly from the project folder name
+Description = "" # Copied from the readme
+Version = "" # Get it from the commit message if possible
+Latest_commit = ""
+optional = true
+
+
+# ************** OPTIONAL ****************
+[Software.manual]
+DOI = "" # it can be automated with the zenondo library
+URL = "" # can this be auto?
+Platform = "" # can this be auto?
+Contributors = []
+Roles = {}
+Organisation = ""
+# Choose from Alpha, Beta, Production/Stable, Mature, & Inactive
+Development_status = ""
+
+
+[Software.auto]
+# These will be automatically filled out as described
+## However, you can also manually fill them out as you see fit
+### Just be aware that you will also need to set "auto = False"
+
+auto = true
+Programming_langs = [] # run a check on all the file types
+License = "" # Taken from the License file in the main folder
+Release_date = "" # time package
+Contact_person = "" # Take from the git email
+
+
+[Documentation]
+# This is to be filled out if the documentation exists elsewhere
+## If the documentation is inside the project folder this will
+### be filled automatically
+
+Title = ""
+Location = ""
+Note = ""
+Purpose = []
+Keywords = []
+
+
+[Related_content]
+
+Research_output = ""
+Datasets = ""
+Software = ""

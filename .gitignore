@@ -159,8 +159,12 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Template specific ignores 
+# Template specific ignores
 # *************** FOR DEVELOPMENT ONLY ****************
 Development_spec.json
 .python-version
 uv.lock
+
+
+# Project specific
+tester.py

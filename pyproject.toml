@@ -1,14 +1,27 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "setuptools-scm"]
+
 [project]
-name = "python-template"
+name = "auto_meta"
 version = "0.1.0"
-description = "Add your description here"
+description = "Automation of metadata production for software"
 readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Charlie G", email = "c.c.greene@vu.nl"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python"
+]
 requires-python = ">=3.11"
 dependencies = [
     "gputil>=1.4.0",
     "pre-commit>=4.2.0",
     "psutil>=7.0.0",
     "ruff>=0.11.8",
+
 ]
 
 [tool.ruff]
