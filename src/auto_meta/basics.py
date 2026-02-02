@@ -63,10 +63,10 @@ def get_version():
         if dirty != "":
             version += ".dev1"
 
-    else:
-        # Extract the version from the PKG-INFO file.
-        with open(join(d, "PKG-INFO")) as f:
-            version = version_re.search(f.read()).group(1)
+    # else:
+    #     # Extract the version from the PKG-INFO file.
+    #     with open(join(d, "PKG-INFO")) as f:
+    #         version = version_re.search(f.read()).group(1)
 
     if version == "":
         # try from commit messages

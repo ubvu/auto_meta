@@ -63,10 +63,8 @@ def get_url():
     # repo_path = "/path/to/your/repo"
     # Initialise the Repo object
     repo = Repo(search_parent_directories=True)
-    # Get a specific commit (use commit hash, or 'HEAD' for the latest commit)
-    commit = repo.commit("HEAD")  #
     # Extract the Git repository URL
-    repo_url = commit.repo.url
+    repo_url = repo.remotes.origin.url
 
     return repo_url
 
@@ -79,7 +77,7 @@ def get_platform():
         data = tomllib.load(f)
     url = data["Software"]["manual"]["URL"]
 
-    platform = re.findall(r"\\(\w+).", url)[0]
+    platform = re.findall(r"\/(\w+).", url)[0]
 
     return platform
 
